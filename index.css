@@ -1,0 +1,272 @@
+:root {
+    --first-color: #F5EEE6;
+    --second-color: #FFF8E3;
+    --third-color: #F3D7CA;
+    --fourth-color: #E6A4B4;
+    --fifth-color: #f5567c;
+    --mainbackground-color: #d1758b;
+    --sixth-color: #fa9bb2;
+}
+
+@keyframes EB {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+body {
+    background-color: var(--fourth-color);
+    animation-name: EB;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.header1 {
+    background-color: var(--mainbackground-color);
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Protest Strike', sans-serif;
+    color: var(--sixth-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.MEheading {
+    text-align: center;
+    margin-top: 250px;
+    font-family: 'Rubik Glitch Pop', system-ui;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+p, pre {
+    font-family: 'Dosis', sans-serif;
+}
+
+.MEtext {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 250px;
+}
+
+.contactH {
+    text-align: center;
+    font-family: 'Rubik Glitch Pop', system-ui;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.email {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer1 {
+    background-color: var(--mainbackground-color);
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 30px;
+    margin-bottom: -10px;
+}
+
+@keyframes blackandwhite {
+    0% {color: white;}
+    50% {color: black;}
+    99% {color: white;}
+}
+
+a:hover {
+    animation-name: blackandwhite;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+a {
+    color: var(--sixth-color);
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--fourth-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--mainbackground-color);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #824856;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-family: 'Rubik Glitch Pop', system-ui;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .fairfieldbg {
+    background-image: url("iuy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+.fairfieldtext {
+    text-align: center;
+    font-size: 38px;
+    background-color: var(--fourth-color);
+    border-radius: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+h2 {
+    font-family: 'Rubik Glitch Pop', system-ui;
+    font-weight: bold;
+}
+
+#firstbigdiv, #secondbigdiv {
+    display: flex;
+}
+
+.robotics{
+    background-color: #eb9bae;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.roboticsH {
+    padding-right: 260px;
+    font-size: 40px;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+.roboticsPic, .daPic, .GJPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.da{
+    background-color: #eb9bae;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    float: right;
+    width: 40%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 200px;
+}
+
+.daH, .trackH {
+    padding-right: 260px;
+    font-size: 40px;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+.GJPic {
+    width: 300px;
+}
+
+.GJMP {
+    background-color: #eb9bae;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.GJMPH {
+    padding-right: 260px;
+    font-size: 40px;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+.track {
+    background-color: #eb9bae;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    float: right;
+    width: 40%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 200px;
+}
+
+iframe {
+    display: inline-block;
+    margin-left: 350px;
+    margin-right: auto;
+    width: 1500px;
+    height: 1500px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.myworkdiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.invisible, .odot, .dontrun, .highlight {
+    font-size: 50px;
+    color: var(--first-color);
+}
+
+@keyframes mywork {
+    0% {color: black;}
+    50% {color: white;}
+    99% {color: black;}
+}
+
+.invisible:hover, .odot:hover, .dontrun:hover, .highlight:hover {
+    animation-name: mywork;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.emptyspace {
+    opacity: 0%;
+}
