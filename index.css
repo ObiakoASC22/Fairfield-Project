@@ -14,10 +14,30 @@
 }
 
 body {
-    background-color: var(--fourth-color);
+    /* background-color: var(--fourth-color); */
+    background-image: radial-gradient(var(--fourth-color), var(--sixth-color), var(--fourth-color));
     animation-name: EB;
     animation-iteration-count: 1;
     animation-duration: 2s;
+    animation-timing-function: ease-in;
+    cursor: url('heart staff.png'), auto;
+}
+
+a:hover {
+    cursor: url('heart cupcake.png'), auto;
+}
+
+h1, p, h2, pre, iframe {
+    animation-name: EB;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
+.email {
+    animation-name: EB;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
     animation-timing-function: ease-in;
 }
 
@@ -27,6 +47,7 @@ body {
     margin-left: -8px;
     margin-right: -8px;
     padding: 30px;
+    position: sticky;
 }
 
 .navbar {
@@ -42,12 +63,25 @@ body {
     width: 100px;
 }
 
+@keyframes left2right {
+    0% {margin-left: -2500px;}
+}
+
+@keyframes right2left {
+    0% {margin-right: -2500px;}
+}
+
+
 .MEheading {
     text-align: center;
     margin-top: 250px;
     font-family: 'Rubik Glitch Pop', system-ui;
     font-size: 70px;
     font-weight: bold;
+    animation-name: left2right;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
 
 p, pre {
@@ -60,6 +94,10 @@ p, pre {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 250px;
+    animation-name: right2left;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
 
 .contactH {
@@ -141,6 +179,12 @@ a {
     border-radius: 20px;
     margin-left: -15px;
     margin-right: -15px;
+    background-image: linear-gradient(var(--fourth-color), var(--sixth-color), var(--fourth-color));
+}
+
+.fairfieldtext::selection, h1::selection, h2::selection, h3::selection, pre::selection, p::selection, a::selection {
+    color: var(--fourth-color);
+    background-color: var(--first-color);
 }
 
 h2 {
@@ -150,6 +194,17 @@ h2 {
 
 #firstbigdiv, #secondbigdiv {
     display: flex;
+}
+
+@keyframes extraH {
+    0% {margin-top: -300px;}
+}
+
+.extraH {
+    animation-name: extraH; 
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
 }
 
 .robotics{
@@ -235,14 +290,35 @@ h2 {
 
 iframe {
     display: inline-block;
-    margin-left: 350px;
+    margin-left: 365px;
     margin-right: auto;
-    width: 1500px;
+    width: 750px;
     height: 1500px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
+@keyframes myworkH {
+    0% {margin-top: -300px;}
+} 
+
+.myworkH {
+    animation-name: myworkH;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fairfieldH {
+    0% {margin-top: 300px;}
+} 
+
+.fairfieldH {
+    animation-name: fairfieldH;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
 
 .myworkdiv {
     display: flex;
@@ -269,4 +345,12 @@ iframe {
 
 .emptyspace {
     opacity: 0%;
+}
+
+.roboticsPic, .daPic, .GJPic {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--fifth-color);
+    border-width: 4px;
+    box-shadow: 5px 5px var(--first-color);
 }
